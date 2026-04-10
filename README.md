@@ -3,9 +3,8 @@
 ## 👥 Equipo
 (Indicar el nombre y apellidos de todos los miembros del equipo)
 
-- 
-- 
-- 
+- Alexandro Montes Dirlau
+- Juan Manuel Vila Millán
 - 
 
 ---
