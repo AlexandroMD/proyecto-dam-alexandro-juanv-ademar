@@ -5,7 +5,7 @@
 
 - Alexandro Montes Dirlau
 - Juan Manuel Vila Millán
-- GIT FLOW
+- 
 
 ---
 
