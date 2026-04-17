@@ -213,7 +213,176 @@
 /* --- Página: index.html --- */
 
 
-/* --- Página: xxxxxx.html --- */
+/* --- Página: habilidades.html --- */
+/* --- Juan Manuel ViLa Millán--- */
+/* ============================================================
+   VARIABLES Y CONFIGURACIÓN GLOBAL
+   ============================================================ */
+:root {
+    /* Color de fondo general de la web (Rosa Pastel) */
+    --color-fondo: #ffe4ed; 
+    --color-texto: #333;
+    --color-borde: #ffc0cb;
+    --color-kirby: #ffb7c5;
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --sombra-tarjeta: 0 4px 10px rgba(0,0,0,0.08);
+}
 
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ============================================================
+   ENCABEZADO
+   ============================================================ */
+.enciclopedia-titulo {
+    text-align: center;
+    color: #d14d72;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.enciclopedia-descripcion {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+/* ============================================================
+   GRID DE HABILIDADES
+   ============================================================ */
+.habilidades-grid {
+    display: grid;
+    /* Esto asegura que todas las tarjetas de una misma fila midan lo mismo */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   ESTILO DE LA TARJETA (FICHA)
+   ============================================================ */
+.habilidad-tarjeta {
+    background-color: #ffffff;
+    border: 2px solid var(--color-borde);
+    border-radius: 15px;
+    padding: 25px;
+    
+    /* Flexbox para manejar la simetría interna */
+    display: flex;
+    flex-direction: column;
+    
+    transition: all 0.3s ease;
+    box-shadow: var(--sombra-tarjeta);
+}
+
+.habilidad-tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(209, 77, 114, 0.2);
+    border-color: #d14d72;
+}
+
+.habilidad-icono {
+    display: block;
+    margin: 0 auto 15px auto;
+    /* Efecto de aura rosa */
+    filter: drop-shadow(0 0 10px rgba(255, 183, 197, 0.6));
+}
+
+.habilidad-nombre {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 10px 0;
+    color: #444;
+}
+
+.habilidad-nombre-en {
+    font-size: 0.85rem;
+    color: #999;
+    display: block; /* Pone el nombre en inglés en una línea nueva */
+}
+
+/* Este párrafo ahora se expandirá para empujar los movimientos al fondo */
+.habilidad-descripcion {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    flex-grow: 1; 
+    text-align: justify;
+    color: #555;
+}
+
+/* ============================================================
+   SECCIÓN DE MOVIMIENTOS (SIMETRÍA)
+   ============================================================ */
+.habilidad-movimientos {
+    background-color: #fffafb;
+    border: 1px solid #ffeef2;
+    border-radius: 10px;
+    padding: 15px;
+    /* Altura mínima para que la caja de movimientos sea igual en todas */
+    min-height: 250px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.movimientos-titulo {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #d14d72;
+    border-bottom: 2px solid var(--color-kirby);
+    display: inline-block;
+}
+
+.movimientos-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movimiento {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.3;
+}
+
+.movimiento::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #ffcc00;
+}
+
+.movimiento-nombre {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.movimiento-descripcion {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 2px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 600px) {
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+    }
+    .habilidad-movimientos {
+        min-height: auto; /* En móvil dejamos que fluya normal */
+    }
+}
 
 /* --- Página:  xxxxxx.html --- */
