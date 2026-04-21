@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="version" content="1.0.0">
-  <title>Mi Proyecto Web</title>
+  <title>Copia y Combate</title>
   <!-- Hoja de estilos compartida por todas las páginas del proyecto -->
+  <!-- Añadir feature a github -->
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<<<<<<< HEAD
   <!-- FOOTER hecho por Juan Manuel Vila Millán -->
   <footer class="footer-kirby">
   <div class="footer-contenido">
@@ -39,5 +41,277 @@
     
   </div>
 </footer>
+=======
+
+  <!-- ============================================================
+       CONTENIDO PRINCIPAL: Enciclopedia de Habilidades
+       ============================================================ -->
+  <main class="enciclopedia-principal" id="contenido-principal">
+
+    <!-- Título de la página -->
+    <h1 class="enciclopedia-titulo">Enciclopedia de Habilidades de Kirby</h1>
+    <p class="enciclopedia-descripcion">
+      Descubre los poderes que Kirby absorbe de sus enemigos en Dream Land.
+      Cada habilidad transforma a nuestro héroe rosa en un guerrero único.
+    </p>
+
+    <!-- ============================================================
+         GRID / LISTADO DE HABILIDADES
+         ============================================================ -->
+    <section class="habilidades-grid" aria-label="Listado de habilidades">
+
+      <!-- ── HABILIDAD 1: ESPADA ─────────────────────────────── -->
+      <article class="habilidad-tarjeta" id="habilidad-espada" aria-labelledby="titulo-espada">
+
+        <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
+        <img class="habilidad-icono" 
+             src="fotosHabilidades/espada.png" 
+             alt="Kirby con la habilidad Espada"
+             width="150"
+             height="150"
+             loading="lazy">
+
+        <!-- Nombre de la habilidad -->
+        <h2 class="habilidad-nombre" id="titulo-espada">Espada <span class="habilidad-nombre-en" lang="en">(Sword)</span></h2>
+
+        <!-- Descripción -->
+        <p class="habilidad-descripcion">
+          Al absorber a Meta Knight o a un espadachín errante, Kirby empuña
+          una reluciente hoja verde que brilla con la energía de las estrellas
+          de Dream Land. Con ella puede cortar nubes, partir rocas y desafiar
+          a los guardias del castillo de Dedede sin pestañear.
+        </p>
+
+        <!-- Lista de movimientos -->
+        <section class="habilidad-movimientos" aria-labelledby="movimientos-espada">
+          <h3 class="movimientos-titulo" id="movimientos-espada">Movimientos</h3>
+          <ul class="movimientos-lista">
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Tajo Celeste</strong> —
+              <span class="movimiento-descripcion">Un corte horizontal que lanza una ráfaga de energía estelar hacia el enemigo.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Giro de Cometa</strong> —
+              <span class="movimiento-descripcion">Kirby gira sobre sí mismo con la espada extendida, barriendo todo a su alrededor.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Estocada Estelar</strong> —
+              <span class="movimiento-descripcion">Un empuje rápido hacia adelante que traspasa incluso los escudos más resistentes.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Lluvia de Destellos</strong> —
+              <span class="movimiento-descripcion">Kirby lanza múltiples tajos en diagonal que caen como meteoros desde el cielo.</span>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+      <!-- ── FIN HABILIDAD: ESPADA ───────────────────────────── -->
+
+
+      <!-- ── HABILIDAD 2: FUEGO ──────────────────────────────── -->
+      <article class="habilidad-tarjeta" id="habilidad-fuego" aria-labelledby="titulo-fuego">
+
+        <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
+        <img class="habilidad-icono" 
+             src="fotosHabilidades/fuego.png" 
+             alt="Kirby con la habilidad Fuego"
+             width="150"
+             height="150"
+             loading="lazy">
+
+        <!-- Nombre de la habilidad -->
+        <h2 class="habilidad-nombre" id="titulo-fuego">Fuego <span class="habilidad-nombre-en" lang="en">(Fire)</span></h2>
+
+        <!-- Descripción -->
+        <p class="habilidad-descripcion">
+          Tras inhalar a Hot Head o a cualquier criatura ígnea, Kirby se convierte
+          en una pequeña bola de lava ambulante. Las llamas que escupe alcanzan
+          temperaturas capaces de derretir el hielo eterno de las montañas
+          nevadas y asar las palomitas del rey Dedede en medio segundo.
+        </p>
+
+        <!-- Lista de movimientos -->
+        <section class="habilidad-movimientos" aria-labelledby="movimientos-fuego">
+          <h3 class="movimientos-titulo" id="movimientos-fuego">Movimientos</h3>
+          <ul class="movimientos-lista">
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Aliento Volcán</strong> —
+              <span class="movimiento-descripcion">Kirby exhala una llamarada continua que calcina todo lo que toca.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Bola de Magma</strong> —
+              <span class="movimiento-descripcion">Kirby se transforma en una esfera ardiente y sale disparado en línea recta.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Erupción Estelar</strong> —
+              <span class="movimiento-descripcion">Una explosión de fuego en todas las direcciones que deja el suelo calcinado.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Tornado Ígnio</strong> —
+              <span class="movimiento-descripcion">Kirby gira con llamas, creando un vórtice de fuego que arrastra enemigos.</span>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+      <!-- ── FIN HABILIDAD: FUEGO ────────────────────────────── -->
+
+
+      <!-- ── HABILIDAD 3: HIELO ──────────────────────────────── -->
+      <article class="habilidad-tarjeta" id="habilidad-hielo" aria-labelledby="titulo-hielo">
+
+        <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
+        <img class="habilidad-icono" 
+             src="fotosHabilidades/hielo.png" 
+             alt="Kirby con la habilidad Hielo"
+             width="150"
+             height="150"
+             loading="lazy">
+
+        <!-- Nombre de la habilidad -->
+        <h2 class="habilidad-nombre" id="titulo-hielo">Hielo <span class="habilidad-nombre-en" lang="en">(Ice)</span></h2>
+
+        <!-- Descripción -->
+        <p class="habilidad-descripcion">
+          Al absorber a Chilly o a un espíritu glacial del Polo Norte de
+          Dream Land, Kirby adquiere el dominio absoluto del frío eterno.
+          Su aliento convierte en estatuas de cristal a cualquier enemigo
+          y puede congelar ríos enteros para cruzarlos de puntillas.
+        </p>
+
+        <!-- Lista de movimientos -->
+        <section class="habilidad-movimientos" aria-labelledby="movimientos-hielo">
+          <h3 class="movimientos-titulo" id="movimientos-hielo">Movimientos</h3>
+          <ul class="movimientos-lista">
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Ventisca Ártica</strong> —
+              <span class="movimiento-descripcion">Kirby sopla un viento helado que congela al instante a todo enemigo en pantalla.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Lanza de Escarcha</strong> —
+              <span class="movimiento-descripcion">Proyectil de hielo afilado que atraviesa múltiples enemigos en línea recta.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Avalancha Cristalina</strong> —
+              <span class="movimiento-descripcion">Kirby convoca una lluvia de bloques de hielo que caen desde el borde superior.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Patinaje Polar</strong> —
+              <span class="movimiento-descripcion">Kirby se desliza sobre una capa de hielo que crea bajo sus pies, arrollando enemigos.</span>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+      <!-- ── FIN HABILIDAD: HIELO ────────────────────────────── -->
+
+
+      <!-- ── HABILIDAD 4: COCINERO ───────────────────────────── -->
+      <article class="habilidad-tarjeta" id="habilidad-cook" aria-labelledby="titulo-cook">
+
+        <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
+        <img class="habilidad-icono" 
+             src="fotosHabilidades/cocinero.png" 
+             alt="Kirby con la habilidad Cocinero"
+             width="150"
+             height="150"
+             loading="lazy">
+
+        <!-- Nombre de la habilidad -->
+        <h2 class="habilidad-nombre" id="titulo-cook">Cocinero <span class="habilidad-nombre-en" lang="en">(Cook)</span></h2>
+
+        <!-- Descripción -->
+        <p class="habilidad-descripcion">
+          Al absorber a Chef Kawasaki o a cualquier chef errante de Dream Land,
+          Kirby se convierte en el cocinero más temible de toda Popstar. Armado
+          con una olla gigante y un cucharón de acero estelar, es capaz de
+          transformar a sus enemigos en suculentos manjares que recuperan su
+          energía. ¡El rey Dedede lleva años intentando robarle la receta!
+        </p>
+
+        <!-- Lista de movimientos -->
+        <section class="habilidad-movimientos" aria-labelledby="movimientos-cook">
+          <h3 class="movimientos-titulo" id="movimientos-cook">Movimientos</h3>
+          <ul class="movimientos-lista">
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Gran Cocción</strong> —
+              <span class="movimiento-descripcion">Kirby despliega su olla mágica y aspira a todos los enemigos cercanos para cocinarlos de un golpe.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Cucharazo Estelar</strong> —
+              <span class="movimiento-descripcion">Un golpe devastador con el cucharón que manda volando al enemigo hacia el horizonte.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Salpicadura Hirviente</strong> —
+              <span class="movimiento-descripcion">Kirby agita la olla lanzando caldo a alta temperatura en todas las direcciones.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Festín de Popstar</strong> —
+              <span class="movimiento-descripcion">El plato cocinado cae al suelo y recupera vida al ser recogido. Cuantos más enemigos, mayor la ración.</span>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+      <!-- ── FIN HABILIDAD: COCINERO ─────────────────────────── -->
+
+
+      <!-- ── HABILIDAD 5: YOYÓ ───────────────────────────────── -->
+      <article class="habilidad-tarjeta" id="habilidad-yoyo" aria-labelledby="titulo-yoyo">
+
+        <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
+        <img class="habilidad-icono" 
+             src="fotosHabilidades/yoyo.png" 
+             alt="Kirby con la habilidad Yoyó"
+             width="150"
+             height="150"
+             loading="lazy">
+
+        <!-- Nombre de la habilidad -->
+        <h2 class="habilidad-nombre" id="titulo-yoyo">Yoyó <span class="habilidad-nombre-en" lang="en">(Yo-Yo)</span></h2>
+
+        <!-- Descripción -->
+        <p class="habilidad-descripcion">
+          Al absorber a un Gim o a cualquier acróbata de Dream Land, Kirby
+          domina el arte del yoyó con una maestría que desafía la gravedad.
+          El disco de acero estelar que maneja puede golpear desde ángulos
+          imposibles, rebotar en las paredes del castillo y volver a su mano
+          como si tuviese voluntad propia. ¡Una habilidad tan estilosa como letal!
+        </p>
+
+        <!-- Lista de movimientos -->
+        <section class="habilidad-movimientos" aria-labelledby="movimientos-yoyo">
+          <h3 class="movimientos-titulo" id="movimientos-yoyo">Movimientos</h3>
+          <ul class="movimientos-lista">
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Lanzamiento Orbital</strong> —
+              <span class="movimiento-descripcion">Kirby lanza el yoyó en un arco amplio que golpea tanto al frente como por encima de su cabeza.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Barrido Rasante</strong> —
+              <span class="movimiento-descripcion">El yoyó se desliza por el suelo a alta velocidad, cortando las patas de cualquier enemigo en su camino.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Tornado de Hilo</strong> —
+              <span class="movimiento-descripcion">Kirby hace girar el yoyó frenéticamente alrededor de su cuerpo, creando un escudo de impacto giratorio.</span>
+            </li>
+            <li class="movimiento">
+              <strong class="movimiento-nombre">Retorno Devastador</strong> —
+              <span class="movimiento-descripcion">Al recogerse, el yoyó golpea con el doble de fuerza a cualquier enemigo que encuentre en su regreso.</span>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+      <!-- ── FIN HABILIDAD: YOYÓ ─────────────────────────────── -->
+
+    </section>
+    <!-- ── FIN GRID DE HABILIDADES ────────────────────────────── -->
+
+  </main>
+  <!-- ── FIN CONTENIDO PRINCIPAL ────────────────────────────────── -->
+
+>>>>>>> origin/feature/lista-habilidades
 </body>
 </html>
