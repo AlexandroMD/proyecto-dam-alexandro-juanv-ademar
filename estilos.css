@@ -14,6 +14,10 @@
 
 /* TODO: Añadir estilos generales (fuente, colores base, márgenes...) */
 
+.animacion:hover {
+   background-color: #d4e8ff;
+   font-size: 125%;
+}
 
 /* ----------------------------------------------------------------
    2. CABECERA Y NAVEGACIÓN 
