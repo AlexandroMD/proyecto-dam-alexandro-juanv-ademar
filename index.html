@@ -17,13 +17,19 @@
        ============================================================ -->
   <header>
     <div class="header-contenido">
-      <h1 class="logo">Mi Proyecto</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <!-- AÑADIR AQUÍ los enlaces a las páginas del equipo -->
-          <!-- Ejemplo: <li><a href="about.html">Sobre nosotros</a></li> -->
-          <!-- Ejemplo: <li><a href="contacto.html">Contacto</a></li>  -->
+      <!-- Logotipo enlazado a la página de inicio -->
+      <a href="index.html" class="header-logo" aria-label="Kirby's Dream Web - Inicio">
+        <span class="logo-estrella" aria-hidden="true">⭐</span>
+        <span class="logo-texto">Kirby's Dream Web</span>
+        <span class="logo-estrella" aria-hidden="true">⭐</span>
+      </a>
+
+      <!-- Navegación principal -->
+      <nav class="header-nav" aria-label="Navegación principal">
+        <ul class="nav-lista" role="list">
+          <li><a href="index.html" class="nav-enlace">🏠 Inicio</a></li>
+          <li><a href="habilidades.html" class="nav-enlace">✨ Habilidades</a></li>
+          <li><a href="amigos.html" class="nav-enlace">💖 Amigos</a></li>
         </ul>
       </nav>
     </div>
