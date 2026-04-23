@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <!-- Añadir feature a github -->
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
   <!-- ============================================================
@@ -23,7 +25,20 @@
         <span class="logo-texto">Kirby's Dream Web</span>
         <span class="logo-estrella" aria-hidden="true">⭐</span>
       </a>
+      
+      <!-- Navegación principal -->
+      <nav class="header-nav" aria-label="Navegación principal">
+        <ul class="nav-lista" role="list">
+          <li><a href="index.html" class="nav-enlace">🏠 Inicio</a></li>
+          <li><a href="habilidades.html" class="nav-enlace">✨ Habilidades</a></li>
+          <li><a href="amigos.html" class="nav-enlace">💖 Amigos</a></li>
+        </ul>
+      </nav>
 
+    </div>
+  </header>
+
+  <main>
     <!-- ============================================================
          GRID / LISTADO DE HABILIDADES
          ============================================================ -->
@@ -33,15 +48,12 @@
       <article class="habilidad-tarjeta" id="habilidad-espada" aria-labelledby="titulo-espada">
 
         <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
-        <img class="habilidad-icono" 
-             src="fotosHabilidades/espada.png" 
-             alt="Kirby con la habilidad Espada"
-             width="150"
-             height="150"
-             loading="lazy">
+        <img class="habilidad-icono" src="fotosHabilidades/espada.png" alt="Kirby con la habilidad Espada" width="150"
+          height="150" loading="lazy">
 
         <!-- Nombre de la habilidad -->
-        <h2 class="habilidad-nombre" id="titulo-espada">Espada <span class="habilidad-nombre-en" lang="en">(Sword)</span></h2>
+        <h2 class="habilidad-nombre" id="titulo-espada">Espada <span class="habilidad-nombre-en"
+            lang="en">(Sword)</span></h2>
 
         <!-- Descripción -->
         <p class="habilidad-descripcion">
@@ -57,19 +69,23 @@
           <ul class="movimientos-lista">
             <li class="movimiento">
               <strong class="movimiento-nombre">Tajo Celeste</strong> —
-              <span class="movimiento-descripcion">Un corte horizontal que lanza una ráfaga de energía estelar hacia el enemigo.</span>
+              <span class="movimiento-descripcion">Un corte horizontal que lanza una ráfaga de energía estelar hacia el
+                enemigo.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Giro de Cometa</strong> —
-              <span class="movimiento-descripcion">Kirby gira sobre sí mismo con la espada extendida, barriendo todo a su alrededor.</span>
+              <span class="movimiento-descripcion">Kirby gira sobre sí mismo con la espada extendida, barriendo todo a
+                su alrededor.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Estocada Estelar</strong> —
-              <span class="movimiento-descripcion">Un empuje rápido hacia adelante que traspasa incluso los escudos más resistentes.</span>
+              <span class="movimiento-descripcion">Un empuje rápido hacia adelante que traspasa incluso los escudos más
+                resistentes.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Lluvia de Destellos</strong> —
-              <span class="movimiento-descripcion">Kirby lanza múltiples tajos en diagonal que caen como meteoros desde el cielo.</span>
+              <span class="movimiento-descripcion">Kirby lanza múltiples tajos en diagonal que caen como meteoros desde
+                el cielo.</span>
             </li>
           </ul>
         </section>
@@ -82,15 +98,12 @@
       <article class="habilidad-tarjeta" id="habilidad-fuego" aria-labelledby="titulo-fuego">
 
         <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
-        <img class="habilidad-icono" 
-             src="fotosHabilidades/fuego.png" 
-             alt="Kirby con la habilidad Fuego"
-             width="150"
-             height="150"
-             loading="lazy">
+        <img class="habilidad-icono" src="fotosHabilidades/fuego.png" alt="Kirby con la habilidad Fuego" width="150"
+          height="150" loading="lazy">
 
         <!-- Nombre de la habilidad -->
-        <h2 class="habilidad-nombre" id="titulo-fuego">Fuego <span class="habilidad-nombre-en" lang="en">(Fire)</span></h2>
+        <h2 class="habilidad-nombre" id="titulo-fuego">Fuego <span class="habilidad-nombre-en" lang="en">(Fire)</span>
+        </h2>
 
         <!-- Descripción -->
         <p class="habilidad-descripcion">
@@ -106,19 +119,23 @@
           <ul class="movimientos-lista">
             <li class="movimiento">
               <strong class="movimiento-nombre">Aliento Volcán</strong> —
-              <span class="movimiento-descripcion">Kirby exhala una llamarada continua que calcina todo lo que toca.</span>
+              <span class="movimiento-descripcion">Kirby exhala una llamarada continua que calcina todo lo que
+                toca.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Bola de Magma</strong> —
-              <span class="movimiento-descripcion">Kirby se transforma en una esfera ardiente y sale disparado en línea recta.</span>
+              <span class="movimiento-descripcion">Kirby se transforma en una esfera ardiente y sale disparado en línea
+                recta.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Erupción Estelar</strong> —
-              <span class="movimiento-descripcion">Una explosión de fuego en todas las direcciones que deja el suelo calcinado.</span>
+              <span class="movimiento-descripcion">Una explosión de fuego en todas las direcciones que deja el suelo
+                calcinado.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Tornado Ígnio</strong> —
-              <span class="movimiento-descripcion">Kirby gira con llamas, creando un vórtice de fuego que arrastra enemigos.</span>
+              <span class="movimiento-descripcion">Kirby gira con llamas, creando un vórtice de fuego que arrastra
+                enemigos.</span>
             </li>
           </ul>
         </section>
@@ -131,15 +148,12 @@
       <article class="habilidad-tarjeta" id="habilidad-hielo" aria-labelledby="titulo-hielo">
 
         <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
-        <img class="habilidad-icono" 
-             src="fotosHabilidades/hielo.png" 
-             alt="Kirby con la habilidad Hielo"
-             width="150"
-             height="150"
-             loading="lazy">
+        <img class="habilidad-icono" src="fotosHabilidades/hielo.png" alt="Kirby con la habilidad Hielo" width="150"
+          height="150" loading="lazy">
 
         <!-- Nombre de la habilidad -->
-        <h2 class="habilidad-nombre" id="titulo-hielo">Hielo <span class="habilidad-nombre-en" lang="en">(Ice)</span></h2>
+        <h2 class="habilidad-nombre" id="titulo-hielo">Hielo <span class="habilidad-nombre-en" lang="en">(Ice)</span>
+        </h2>
 
         <!-- Descripción -->
         <p class="habilidad-descripcion">
@@ -155,19 +169,23 @@
           <ul class="movimientos-lista">
             <li class="movimiento">
               <strong class="movimiento-nombre">Ventisca Ártica</strong> —
-              <span class="movimiento-descripcion">Kirby sopla un viento helado que congela al instante a todo enemigo en pantalla.</span>
+              <span class="movimiento-descripcion">Kirby sopla un viento helado que congela al instante a todo enemigo
+                en pantalla.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Lanza de Escarcha</strong> —
-              <span class="movimiento-descripcion">Proyectil de hielo afilado que atraviesa múltiples enemigos en línea recta.</span>
+              <span class="movimiento-descripcion">Proyectil de hielo afilado que atraviesa múltiples enemigos en línea
+                recta.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Avalancha Cristalina</strong> —
-              <span class="movimiento-descripcion">Kirby convoca una lluvia de bloques de hielo que caen desde el borde superior.</span>
+              <span class="movimiento-descripcion">Kirby convoca una lluvia de bloques de hielo que caen desde el borde
+                superior.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Patinaje Polar</strong> —
-              <span class="movimiento-descripcion">Kirby se desliza sobre una capa de hielo que crea bajo sus pies, arrollando enemigos.</span>
+              <span class="movimiento-descripcion">Kirby se desliza sobre una capa de hielo que crea bajo sus pies,
+                arrollando enemigos.</span>
             </li>
           </ul>
         </section>
@@ -180,15 +198,12 @@
       <article class="habilidad-tarjeta" id="habilidad-cook" aria-labelledby="titulo-cook">
 
         <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
-        <img class="habilidad-icono" 
-             src="fotosHabilidades/cocinero.png" 
-             alt="Kirby con la habilidad Cocinero"
-             width="150"
-             height="150"
-             loading="lazy">
+        <img class="habilidad-icono" src="fotosHabilidades/cocinero.png" alt="Kirby con la habilidad Cocinero"
+          width="150" height="150" loading="lazy">
 
         <!-- Nombre de la habilidad -->
-        <h2 class="habilidad-nombre" id="titulo-cook">Cocinero <span class="habilidad-nombre-en" lang="en">(Cook)</span></h2>
+        <h2 class="habilidad-nombre" id="titulo-cook">Cocinero <span class="habilidad-nombre-en" lang="en">(Cook)</span>
+        </h2>
 
         <!-- Descripción -->
         <p class="habilidad-descripcion">
@@ -205,19 +220,23 @@
           <ul class="movimientos-lista">
             <li class="movimiento">
               <strong class="movimiento-nombre">Gran Cocción</strong> —
-              <span class="movimiento-descripcion">Kirby despliega su olla mágica y aspira a todos los enemigos cercanos para cocinarlos de un golpe.</span>
+              <span class="movimiento-descripcion">Kirby despliega su olla mágica y aspira a todos los enemigos cercanos
+                para cocinarlos de un golpe.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Cucharazo Estelar</strong> —
-              <span class="movimiento-descripcion">Un golpe devastador con el cucharón que manda volando al enemigo hacia el horizonte.</span>
+              <span class="movimiento-descripcion">Un golpe devastador con el cucharón que manda volando al enemigo
+                hacia el horizonte.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Salpicadura Hirviente</strong> —
-              <span class="movimiento-descripcion">Kirby agita la olla lanzando caldo a alta temperatura en todas las direcciones.</span>
+              <span class="movimiento-descripcion">Kirby agita la olla lanzando caldo a alta temperatura en todas las
+                direcciones.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Festín de Popstar</strong> —
-              <span class="movimiento-descripcion">El plato cocinado cae al suelo y recupera vida al ser recogido. Cuantos más enemigos, mayor la ración.</span>
+              <span class="movimiento-descripcion">El plato cocinado cae al suelo y recupera vida al ser recogido.
+                Cuantos más enemigos, mayor la ración.</span>
             </li>
           </ul>
         </section>
@@ -230,15 +249,12 @@
       <article class="habilidad-tarjeta" id="habilidad-yoyo" aria-labelledby="titulo-yoyo">
 
         <!-- Imagen de la habilidad - Tamaño fijo: 150x150 píxeles -->
-        <img class="habilidad-icono" 
-             src="fotosHabilidades/yoyo.png" 
-             alt="Kirby con la habilidad Yoyó"
-             width="150"
-             height="150"
-             loading="lazy">
+        <img class="habilidad-icono" src="fotosHabilidades/yoyo.png" alt="Kirby con la habilidad Yoyó" width="150"
+          height="150" loading="lazy">
 
         <!-- Nombre de la habilidad -->
-        <h2 class="habilidad-nombre" id="titulo-yoyo">Yoyó <span class="habilidad-nombre-en" lang="en">(Yo-Yo)</span></h2>
+        <h2 class="habilidad-nombre" id="titulo-yoyo">Yoyó <span class="habilidad-nombre-en" lang="en">(Yo-Yo)</span>
+        </h2>
 
         <!-- Descripción -->
         <p class="habilidad-descripcion">
@@ -255,19 +271,23 @@
           <ul class="movimientos-lista">
             <li class="movimiento">
               <strong class="movimiento-nombre">Lanzamiento Orbital</strong> —
-              <span class="movimiento-descripcion">Kirby lanza el yoyó en un arco amplio que golpea tanto al frente como por encima de su cabeza.</span>
+              <span class="movimiento-descripcion">Kirby lanza el yoyó en un arco amplio que golpea tanto al frente como
+                por encima de su cabeza.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Barrido Rasante</strong> —
-              <span class="movimiento-descripcion">El yoyó se desliza por el suelo a alta velocidad, cortando las patas de cualquier enemigo en su camino.</span>
+              <span class="movimiento-descripcion">El yoyó se desliza por el suelo a alta velocidad, cortando las patas
+                de cualquier enemigo en su camino.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Tornado de Hilo</strong> —
-              <span class="movimiento-descripcion">Kirby hace girar el yoyó frenéticamente alrededor de su cuerpo, creando un escudo de impacto giratorio.</span>
+              <span class="movimiento-descripcion">Kirby hace girar el yoyó frenéticamente alrededor de su cuerpo,
+                creando un escudo de impacto giratorio.</span>
             </li>
             <li class="movimiento">
               <strong class="movimiento-nombre">Retorno Devastador</strong> —
-              <span class="movimiento-descripcion">Al recogerse, el yoyó golpea con el doble de fuerza a cualquier enemigo que encuentre en su regreso.</span>
+              <span class="movimiento-descripcion">Al recogerse, el yoyó golpea con el doble de fuerza a cualquier
+                enemigo que encuentre en su regreso.</span>
             </li>
           </ul>
         </section>
@@ -281,36 +301,37 @@
   </main>
   <!-- ── FIN CONTENIDO PRINCIPAL ────────────────────────────────── -->
 
-</body>
-<!-- FOOTER hecho por Juan Manuel Vila Millán -->
+  <!-- FOOTER hecho por Juan Manuel Vila Millán -->
   <footer class="footer-kirby">
-  <div class="footer-contenido">
-    
-    <div class="redes-sociales">
-      <a href="#" class="social-link" title="Twitch de King Dedede">
-        <span class="icono">👑</span> Twitch de Dedede
-      </a>
-      <a href="#" class="social-link" title="Waddle Dee Gram">
-        <span class="icono">🍭</span> Waddle Dee Gram
-      </a>
-      <a href="#" class="social-link" title="Meta Knight X">
-        <span class="icono">⚔️</span> Meta Knight X
-      </a>
-    </div>
+    <div class="footer-contenido">
 
-    <div class="divisor-estrellas" aria-hidden="true">
-      <span>🌟</span><span>⭐</span><span>🌟</span><span>⭐</span><span>🌟</span>
-    </div>
+      <div class="redes-sociales">
+        <a href="#" class="social-link" title="Twitch de King Dedede">
+          <span class="icono">👑</span> Twitch de Dedede
+        </a>
+        <a href="#" class="social-link" title="Waddle Dee Gram">
+          <span class="icono">🍭</span> Waddle Dee Gram
+        </a>
+        <a href="#" class="social-link" title="Meta Knight X">
+          <span class="icono">⚔️</span> Meta Knight X
+        </a>
+      </div>
 
-    <div class="copyright">
-      <p>&copy; 2026 <strong>Kirby’s Dream Web</strong></p>
-      <p class="nombres-grupo">
-        Desarrollado por: <span>Juan Vila, Alexandro Montes, Ademar Carril</span>
-      </p>
-      <p class="frase-final">Hecho con Maxitomates y Estrellas de Deseos</p>
+      <div class="divisor-estrellas" aria-hidden="true">
+        <span>🌟</span><span>⭐</span><span>🌟</span><span>⭐</span><span>🌟</span>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2026 <strong>Kirby’s Dream Web</strong></p>
+        <p class="nombres-grupo">
+          Desarrollado por: <span>Juan Vila, Alexandro Montes, Ademar Carril</span>
+        </p>
+        <p class="frase-final">Hecho con Maxitomates y Estrellas de Deseos</p>
+      </div>
+
+
     </div>
-    
-    
-  </div>
-</footer>
+  </footer>
+</body>
+
 </html>
