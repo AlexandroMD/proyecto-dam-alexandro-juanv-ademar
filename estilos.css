@@ -30,17 +30,22 @@
    Gradiente suave en sentido inverso al footer para crear simetría.
    ----------------------------------------------------------------- */
 .header-kirby {
-  position: sticky;
-  top: 0;
-  z-index: 100;                            /* Por encima de todo el contenido */
-  background: linear-gradient(100deg, #d4e8ff 0%, #ffd1f7 50%, #ffe0ec 100%);
-  border-bottom: 4px solid #ffaad4;        /* Línea inferior rosa — espejo del footer */
-  border-radius: 0 0 32px 32px;           /* Esquinas inferiores redondeadas */
-  backdrop-filter: blur(10px);             /* Efecto cristal */
-  -webkit-backdrop-filter: blur(10px);     /* Compatibilidad Safari */
-  box-shadow: 0 4px 24px rgba(255, 110, 180, 0.15);
-  font-family: 'Nunito', 'Segoe UI', sans-serif;
-  overflow: hidden;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   /* Por encima de todo el contenido */
+   background: linear-gradient(100deg, #d4e8ff 0%, #ffd1f7 50%, #ffe0ec 100%);
+   border-bottom: 4px solid #ffaad4;
+   /* Línea inferior rosa — espejo del footer */
+   border-radius: 0 0 32px 32px;
+   /* Esquinas inferiores redondeadas */
+   backdrop-filter: blur(10px);
+   /* Efecto cristal */
+   -webkit-backdrop-filter: blur(10px);
+   /* Compatibilidad Safari */
+   box-shadow: 0 4px 24px rgba(255, 110, 180, 0.15);
+   font-family: 'Nunito', 'Segoe UI', sans-serif;
+   overflow: hidden;
 }
 
 
@@ -48,15 +53,15 @@
    CÍRCULO DECORATIVO — esquina superior derecha (espejo del footer)
    ----------------------------------------------------------------- */
 .header-kirby::before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 160px;
-  height: 160px;
-  background: rgba(255, 182, 220, 0.18);
-  border-radius: 50%;
-  pointer-events: none;
+   content: '';
+   position: absolute;
+   top: -50px;
+   right: -50px;
+   width: 160px;
+   height: 160px;
+   background: rgba(255, 182, 220, 0.18);
+   border-radius: 50%;
+   pointer-events: none;
 }
 
 /* -----------------------------------------------------------------
@@ -64,15 +69,15 @@
    En móvil se apilan en columna y se centran.
    ----------------------------------------------------------------- */
 .header-contenido {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 0.9rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  position: relative;
-  z-index: 1;
+   max-width: 860px;
+   margin: 0 auto;
+   padding: 0.9rem 1.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+   position: relative;
+   z-index: 1;
 }
 
 /* -----------------------------------------------------------------
@@ -80,54 +85,55 @@
    Mismo estilo "píldora" que los botones de redes del footer.
    ----------------------------------------------------------------- */
 .header-logo {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1.5px solid rgba(255, 140, 200, 0.4);
-  border-radius: 999px;
-  padding: 7px 18px;
-  backdrop-filter: blur(4px);
-  transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   background: rgba(255, 255, 255, 0.75);
+   border: 1.5px solid rgba(255, 140, 200, 0.4);
+   border-radius: 999px;
+   padding: 7px 18px;
+   backdrop-filter: blur(4px);
+   transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
 }
 
 .header-logo:hover {
-  background: #ff6eb4;
-  border-color: #ff6eb4;
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 6px 20px rgba(255, 110, 180, 0.35);
+   background: #ff6eb4;
+   border-color: #ff6eb4;
+   transform: translateY(-2px) scale(1.04);
+   box-shadow: 0 6px 20px rgba(255, 110, 180, 0.35);
 }
 
 .header-logo:hover .logo-texto {
-  color: #fff;
+   color: #fff;
 }
 
 .logo-texto {
-  font-weight: 800;
-  font-size: 1.05rem;
-  color: #b5006e;
-  transition: color 0.25s;
-  white-space: nowrap;
+   font-weight: 800;
+   font-size: 1.05rem;
+   color: #b5006e;
+   transition: color 0.25s;
+   white-space: nowrap;
 }
 
 .logo-estrella {
-  font-size: 1rem;
-  filter: drop-shadow(0 0 3px #ffe066);   /* Halo dorado en las estrellas */
-  line-height: 1;
+   font-size: 1rem;
+   filter: drop-shadow(0 0 3px #ffe066);
+   /* Halo dorado en las estrellas */
+   line-height: 1;
 }
 
 /* -----------------------------------------------------------------
    LISTA DE NAVEGACIÓN
    ----------------------------------------------------------------- */
 .nav-lista {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   gap: 8px;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 /* -----------------------------------------------------------------
@@ -136,56 +142,57 @@
    El subrayado animado se construye con ::after escalado en X.
    ----------------------------------------------------------------- */
 .nav-enlace {
-  text-decoration: none;
-  color: #b5006e;
-  font-weight: 700;
-  font-size: 0.92rem;
-  padding: 8px 18px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1.5px solid rgba(255, 140, 200, 0.4);
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.25s;
-  backdrop-filter: blur(4px);
+   text-decoration: none;
+   color: #b5006e;
+   font-weight: 700;
+   font-size: 0.92rem;
+   padding: 8px 18px;
+   background: rgba(255, 255, 255, 0.75);
+   border: 1.5px solid rgba(255, 140, 200, 0.4);
+   border-radius: 999px;
+   display: inline-flex;
+   align-items: center;
+   gap: 5px;
+   position: relative;
+   overflow: hidden;
+   transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.25s;
+   backdrop-filter: blur(4px);
 }
 
 /* Subrayado animado que crece desde el centro al hacer hover */
 .nav-enlace::after {
-  content: '';
-  position: absolute;
-  bottom: 6px;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
-  transform-origin: center;
-  width: 60%;
-  height: 2px;
-  background: #fff;
-  border-radius: 2px;
-  transition: transform 0.25s ease;
+   content: '';
+   position: absolute;
+   bottom: 6px;
+   left: 50%;
+   transform: translateX(-50%) scaleX(0);
+   transform-origin: center;
+   width: 60%;
+   height: 2px;
+   background: #fff;
+   border-radius: 2px;
+   transition: transform 0.25s ease;
 }
 
 .nav-enlace:hover {
-  background: #ff6eb4;
-  color: #fff;
-  border-color: #ff6eb4;
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 6px 20px rgba(255, 110, 180, 0.35);
+   background: #ff6eb4;
+   color: #fff;
+   border-color: #ff6eb4;
+   transform: translateY(-2px) scale(1.04);
+   box-shadow: 0 6px 20px rgba(255, 110, 180, 0.35);
 }
 
 .nav-enlace:hover::after {
-  transform: translateX(-50%) scaleX(1);  /* Subrayado se despliega */
+   transform: translateX(-50%) scaleX(1);
+   /* Subrayado se despliega */
 }
 
 /* Página activa: misma apariencia que hover pero permanente */
 .nav-enlace.activo {
-  background: #ff6eb4;
-  color: #fff;
-  border-color: #ff6eb4;
-  box-shadow: 0 4px 14px rgba(255, 110, 180, 0.30);
+   background: #ff6eb4;
+   color: #fff;
+   border-color: #ff6eb4;
+   box-shadow: 0 4px 14px rgba(255, 110, 180, 0.30);
 }
 
 /* -----------------------------------------------------------------
@@ -193,21 +200,22 @@
    El logo y el menú se apilan verticalmente y se centran.
    ----------------------------------------------------------------- */
 @media (max-width: 600px) {
-  .header-contenido {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.8rem 1rem;
-  }
+   .header-contenido {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.8rem 1rem;
+   }
 
-  .logo-texto {
-    font-size: 0.95rem;
-  }
+   .logo-texto {
+      font-size: 0.95rem;
+   }
 
-  .nav-enlace {
-    font-size: 0.85rem;
-    padding: 7px 14px;
-  }
+   .nav-enlace {
+      font-size: 0.85rem;
+      padding: 7px 14px;
+   }
 }
+
 /* ----------------------------------------------------------------
    3. PIE DE PÁGINA (footer)
    ---------------------------------------------------------------- */
@@ -223,14 +231,18 @@
    Position relative necesario para los círculos decorativos (::before / ::after).
    ----------------------------------------------------------------- */
 .footer-kirby {
-  background: linear-gradient(160deg, #ffe0ec 0%, #ffd1f7 50%, #d4e8ff 100%);
-  border-top: 4px solid #ffaad4;          /* Línea superior rosa */
-  border-radius: 32px 32px 0 0;           /* Solo esquinas superiores redondeadas */
-  padding: 2.5rem 1.5rem 2rem;
-  margin-top: 2rem;
-  font-family: 'Nunito', 'Segoe UI', sans-serif;
-  position: relative;                     /* Contexto para los pseudoelementos decorativos */
-  overflow: hidden;                       /* Recorta los círculos que sobresalen */
+   background: linear-gradient(160deg, #ffe0ec 0%, #ffd1f7 50%, #d4e8ff 100%);
+   border-top: 4px solid #ffaad4;
+   /* Línea superior rosa */
+   border-radius: 32px 32px 0 0;
+   /* Solo esquinas superiores redondeadas */
+   padding: 2.5rem 1.5rem 2rem;
+   margin-top: 2rem;
+   font-family: 'Nunito', 'Segoe UI', sans-serif;
+   position: relative;
+   /* Contexto para los pseudoelementos decorativos */
+   overflow: hidden;
+   /* Recorta los círculos que sobresalen */
 }
 
 /* -----------------------------------------------------------------
@@ -238,14 +250,15 @@
    Forma difuminada que añade profundidad al fondo sin distraer.
    ----------------------------------------------------------------- */
 .footer-kirby::before {
-  content: '';
-  position: absolute;
-  top: -60px;
-  left: -60px;
-  width: 180px;
-  height: 180px;
-  background: rgba(255, 182, 220, 0.18);  /* Rosa muy transparente */
-  border-radius: 50%;
+   content: '';
+   position: absolute;
+   top: -60px;
+   left: -60px;
+   width: 180px;
+   height: 180px;
+   background: rgba(255, 182, 220, 0.18);
+   /* Rosa muy transparente */
+   border-radius: 50%;
 }
 
 /* -----------------------------------------------------------------
@@ -253,14 +266,15 @@
    Mismo efecto que ::before pero en tono azul para equilibrar.
    ----------------------------------------------------------------- */
 .footer-kirby::after {
-  content: '';
-  position: absolute;
-  bottom: -50px;
-  right: -40px;
-  width: 140px;
-  height: 140px;
-  background: rgba(180, 200, 255, 0.18);  /* Azul muy transparente */
-  border-radius: 50%;
+   content: '';
+   position: absolute;
+   bottom: -50px;
+   right: -40px;
+   width: 140px;
+   height: 140px;
+   background: rgba(180, 200, 255, 0.18);
+   /* Azul muy transparente */
+   border-radius: 50%;
 }
 
 /* -----------------------------------------------------------------
@@ -269,15 +283,18 @@
    z-index: 1 asegura que el texto quede por encima de los círculos decorativos.
    ----------------------------------------------------------------- */
 .footer-contenido {
-  max-width: 860px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;                 /* Apila secciones verticalmente */
-  align-items: center;
-  gap: 1.4rem;                            /* Separación uniforme entre secciones */
-  text-align: center;
-  position: relative;
-  z-index: 1;                             /* Sobre los pseudoelementos decorativos */
+   max-width: 860px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   /* Apila secciones verticalmente */
+   align-items: center;
+   gap: 1.4rem;
+   /* Separación uniforme entre secciones */
+   text-align: center;
+   position: relative;
+   z-index: 1;
+   /* Sobre los pseudoelementos decorativos */
 }
 
 /* -----------------------------------------------------------------
@@ -285,10 +302,11 @@
    Flex con wrap para que los botones se adapten a pantallas pequeñas.
    ----------------------------------------------------------------- */
 .redes-sociales {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;                        /* Salto de línea automático en móvil */
-  justify-content: center;
+   display: flex;
+   gap: 12px;
+   flex-wrap: wrap;
+   /* Salto de línea automático en móvil */
+   justify-content: center;
 }
 
 /* -----------------------------------------------------------------
@@ -297,19 +315,24 @@
    border-radius: 999px garantiza forma de cápsula independientemente del tamaño.
    ----------------------------------------------------------------- */
 .social-link {
-  text-decoration: none;
-  color: #b5006e;                         /* Rosa oscuro para contraste sobre fondo claro */
-  font-weight: 700;
-  font-size: 0.92rem;
-  padding: 9px 20px;
-  background: rgba(255, 255, 255, 0.75); /* Blanco semitransparente */
-  border: 1.5px solid rgba(255, 140, 200, 0.4);
-  border-radius: 999px;                  /* Forma de cápsula/píldora */
-  display: flex;
-  align-items: center;
-  gap: 7px;                              /* Espacio entre icono y texto */
-  transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.25s;
-  backdrop-filter: blur(4px);            /* Efecto cristal sobre el fondo */
+   text-decoration: none;
+   color: #b5006e;
+   /* Rosa oscuro para contraste sobre fondo claro */
+   font-weight: 700;
+   font-size: 0.92rem;
+   padding: 9px 20px;
+   background: rgba(255, 255, 255, 0.75);
+   /* Blanco semitransparente */
+   border: 1.5px solid rgba(255, 140, 200, 0.4);
+   border-radius: 999px;
+   /* Forma de cápsula/píldora */
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   /* Espacio entre icono y texto */
+   transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.25s;
+   backdrop-filter: blur(4px);
+   /* Efecto cristal sobre el fondo */
 }
 
 /* -----------------------------------------------------------------
@@ -318,11 +341,12 @@
    y aparece una sombra rosada para efecto de brillo.
    ----------------------------------------------------------------- */
 .social-link:hover {
-  background: #ff6eb4;
-  color: #fff;
-  border-color: #ff6eb4;
-  transform: translateY(-2px) scale(1.04); /* Sube 2px y crece un 4% */
-  box-shadow: 0 6px 20px rgba(255, 110, 180, 0.35);
+   background: #ff6eb4;
+   color: #fff;
+   border-color: #ff6eb4;
+   transform: translateY(-2px) scale(1.04);
+   /* Sube 2px y crece un 4% */
+   box-shadow: 0 6px 20px rgba(255, 110, 180, 0.35);
 }
 
 /* -----------------------------------------------------------------
@@ -330,8 +354,8 @@
    Tamaño fijo para evitar que herede el font-size del contenedor.
    ----------------------------------------------------------------- */
 .icono {
-  font-size: 16px;
-  line-height: 1;
+   font-size: 16px;
+   line-height: 1;
 }
 
 /* -----------------------------------------------------------------
@@ -340,10 +364,11 @@
    drop-shadow da brillo dorado a los emojis sin afectar al layout.
    ----------------------------------------------------------------- */
 .divisor-estrellas {
-  font-size: 1.25rem;
-  letter-spacing: 8px;
-  opacity: 0.85;
-  filter: drop-shadow(0 0 4px #ffe066);  /* Halo dorado en las estrellas */
+   font-size: 1.25rem;
+   letter-spacing: 8px;
+   opacity: 0.85;
+   filter: drop-shadow(0 0 4px #ffe066);
+   /* Halo dorado en las estrellas */
 }
 
 /* -----------------------------------------------------------------
@@ -352,15 +377,15 @@
    margin: 0 evita espaciados extra entre líneas.
    ----------------------------------------------------------------- */
 .copyright p {
-  margin: 0;
-  color: #9a0055;
-  font-size: 0.97rem;
+   margin: 0;
+   color: #9a0055;
+   font-size: 0.97rem;
 }
 
 /* Nombre del proyecto en negrita y tono algo más oscuro para destacar */
 .copyright strong {
-  font-weight: 800;
-  color: #c0006e;
+   font-weight: 800;
+   color: #c0006e;
 }
 
 /* -----------------------------------------------------------------
@@ -368,15 +393,15 @@
    Texto ligeramente más pequeño que el copyright principal.
    ----------------------------------------------------------------- */
 .nombres-grupo {
-  font-size: 0.9rem;
-  color: #a0006a;
+   font-size: 0.9rem;
+   color: #a0006a;
 }
 
 /* Nombres en cursiva y negrita para resaltarlos visualmente */
 .nombres-grupo span {
-  font-weight: 700;
-  font-style: italic;
-  color: #c0006e;
+   font-weight: 700;
+   font-style: italic;
+   color: #c0006e;
 }
 
 /* -----------------------------------------------------------------
@@ -385,417 +410,434 @@
    visualmente con el resto del contenido.
    ----------------------------------------------------------------- */
 .frase-final {
-  font-size: 0.82rem;
-  color: #b8006a;
-  opacity: 0.7;
-  margin-top: 2px;
+   font-size: 0.82rem;
+   color: #b8006a;
+   opacity: 0.7;
+   margin-top: 2px;
 }
 
 main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 3rem;
-  font-family: 'Nunito', 'Segoe UI', sans-serif;
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 2.5rem 1.5rem 3rem;
+   font-family: 'Nunito', 'Segoe UI', sans-serif;
 }
- 
+
 /* ----------------------------------------------------------------
    5. SECCIÓN DE BIENVENIDA — index.html (.bienvenida)
    ---------------------------------------------------------------- */
- 
+
 .bienvenida {
-  background: linear-gradient(135deg, #fff0f8 0%, #f5eeff 50%, #e8f4ff 100%);
-  border: 3px solid #ffaad4;
-  border-radius: 32px;
-  padding: 2.5rem 2rem;
-  margin-bottom: 2.5rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+   background: linear-gradient(135deg, #fff0f8 0%, #f5eeff 50%, #e8f4ff 100%);
+   border: 3px solid #ffaad4;
+   border-radius: 32px;
+   padding: 2.5rem 2rem;
+   margin-bottom: 2.5rem;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
 }
- 
+
 /* Círculo decorativo interior superior-izquierda */
 .bienvenida::before {
-  content: '';
-  position: absolute;
-  top: -40px;
-  left: -40px;
-  width: 140px;
-  height: 140px;
-  background: rgba(255, 110, 180, 0.10);
-  border-radius: 50%;
-  pointer-events: none;
+   content: '';
+   position: absolute;
+   top: -40px;
+   left: -40px;
+   width: 140px;
+   height: 140px;
+   background: rgba(255, 110, 180, 0.10);
+   border-radius: 50%;
+   pointer-events: none;
 }
- 
+
 /* Círculo decorativo interior inferior-derecha */
 .bienvenida::after {
-  content: '';
-  position: absolute;
-  bottom: -35px;
-  right: -35px;
-  width: 120px;
-  height: 120px;
-  background: rgba(180, 220, 255, 0.14);
-  border-radius: 50%;
-  pointer-events: none;
+   content: '';
+   position: absolute;
+   bottom: -35px;
+   right: -35px;
+   width: 120px;
+   height: 120px;
+   background: rgba(180, 220, 255, 0.14);
+   border-radius: 50%;
+   pointer-events: none;
 }
- 
+
 .bienvenida h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #b5006e;
-  margin: 0 0 1rem;
-  position: relative;
-  z-index: 1;
+   font-size: 2rem;
+   font-weight: 800;
+   color: #b5006e;
+   margin: 0 0 1rem;
+   position: relative;
+   z-index: 1;
 }
- 
+
 .bienvenida p {
-  font-size: 1.05rem;
-  color: #7a004d;
-  line-height: 1.8;
-  max-width: 620px;
-  margin: 0 auto 0.6rem;
-  position: relative;
-  z-index: 1;
+   font-size: 1.05rem;
+   color: #7a004d;
+   line-height: 1.8;
+   max-width: 620px;
+   margin: 0 auto 0.6rem;
+   position: relative;
+   z-index: 1;
 }
- 
+
 /* ----------------------------------------------------------------
    6. TIPOGRAFÍA GLOBAL (h2, h3, párrafos dentro de main)
    ---------------------------------------------------------------- */
- 
+
 /* Títulos h2 con subrayado decorativo pastel */
+main h1 {
+   font-size: 2rem;
+   font-weight: 800;
+   color: #b5006e;
+   margin: 0 0 0.8rem;
+   display: inline-block;
+   position: relative;
+}
+
 main h2 {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: #b5006e;
-  margin: 0 0 0.75rem;
-  display: inline-block;
-  position: relative;
+   font-size: 1.6rem;
+   font-weight: 800;
+   color: #b5006e;
+   margin: 0 0 0.75rem;
+   display: inline-block;
+   position: relative;
 }
- 
+
 main h2::after {
-  content: '';
-  display: block;
-  height: 4px;
-  border-radius: 99px;
-  background: linear-gradient(90deg, #ff6eb4, #ffe066, #a8d8ff);
-  margin-top: 5px;
-  width: 70%;
+   content: '';
+   display: block;
+   height: 4px;
+   border-radius: 99px;
+   background: linear-gradient(90deg, #ff6eb4, #ffe066, #a8d8ff);
+   margin-top: 5px;
+   width: 70%;
 }
- 
+
 /* Subtítulos h3 */
 main h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #9a0055;
-  margin: 1rem 0 0.5rem;
+   font-size: 1.1rem;
+   font-weight: 700;
+   color: #9a0055;
+   margin: 1rem 0 0.5rem;
 }
- 
+
 /* Párrafos */
 main p {
-  color: #6b003f;
-  line-height: 1.85;
-  font-size: 0.97rem;
+   color: #6b003f;
+   line-height: 1.85;
+   font-size: 0.97rem;
 }
- 
+
 /* ----------------------------------------------------------------
    7. GRID DE HABILIDADES (.habilidades-grid)
    ---------------------------------------------------------------- */
- 
+
 .habilidades-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 1rem 0;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 2rem;
+   padding: 1rem 0;
 }
- 
+
 /* ----------------------------------------------------------------
    8. TARJETA DE HABILIDAD (.habilidad-tarjeta)
    ---------------------------------------------------------------- */
- 
+
 .habilidad-tarjeta {
-  background: rgba(255, 255, 255, 0.78);
-  border: 2px solid rgba(255, 170, 212, 0.45);
-  border-radius: 28px;
-  padding: 2rem 1.75rem 1.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 18px rgba(255, 110, 180, 0.10);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  position: relative;
-  overflow: hidden;
+   background: rgba(255, 255, 255, 0.78);
+   border: 2px solid rgba(255, 170, 212, 0.45);
+   border-radius: 28px;
+   padding: 2rem 1.75rem 1.75rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   backdrop-filter: blur(8px);
+   -webkit-backdrop-filter: blur(8px);
+   box-shadow: 0 4px 18px rgba(255, 110, 180, 0.10);
+   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+   position: relative;
+   overflow: hidden;
 }
- 
+
 /* Brillo sutil en la esquina superior de cada tarjeta */
 .habilidad-tarjeta::before {
-  content: '';
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 90px;
-  height: 90px;
-  background: rgba(255, 224, 102, 0.15);
-  border-radius: 50%;
-  pointer-events: none;
+   content: '';
+   position: absolute;
+   top: -30px;
+   right: -30px;
+   width: 90px;
+   height: 90px;
+   background: rgba(255, 224, 102, 0.15);
+   border-radius: 50%;
+   pointer-events: none;
 }
- 
+
 /* Hover: sube, sombra más intensa, borde rosa brillante */
 .habilidad-tarjeta:hover {
-  transform: translateY(-6px) scale(1.015);
-  box-shadow: 0 14px 40px rgba(255, 110, 180, 0.22);
-  border-color: #ff6eb4;
+   transform: translateY(-6px) scale(1.015);
+   box-shadow: 0 14px 40px rgba(255, 110, 180, 0.22);
+   border-color: #ff6eb4;
 }
- 
+
 /* ----------------------------------------------------------------
    9. ICONO DE HABILIDAD (.habilidad-icono)
    ---------------------------------------------------------------- */
- 
+
 .habilidad-icono {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  margin-bottom: 1.1rem;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #fff5fb, #e8f4ff);
-  padding: 10px;
-  border: 2px solid rgba(255, 170, 212, 0.35);
-  /* Animación de rebote suave */
-  animation: rebote-icono 3s ease-in-out infinite;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   width: 120px;
+   height: 120px;
+   object-fit: contain;
+   margin-bottom: 1.1rem;
+   border-radius: 50%;
+   background: linear-gradient(135deg, #fff5fb, #e8f4ff);
+   padding: 10px;
+   border: 2px solid rgba(255, 170, 212, 0.35);
+   /* Animación de rebote suave */
+   animation: rebote-icono 3s ease-in-out infinite;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
- 
+
 .habilidad-tarjeta:hover .habilidad-icono {
-  animation-play-state: paused;
-  transform: scale(1.1) rotate(-3deg);
-  box-shadow: 0 8px 24px rgba(255, 110, 180, 0.30);
+   animation-play-state: paused;
+   transform: scale(1.1) rotate(-3deg);
+   box-shadow: 0 8px 24px rgba(255, 110, 180, 0.30);
 }
- 
+
 @keyframes rebote-icono {
-  0%, 100% { transform: translateY(0px);    }
-  50%       { transform: translateY(-7px);   }
+
+   0%,
+   100% {
+      transform: translateY(0px);
+   }
+
+   50% {
+      transform: translateY(-7px);
+   }
 }
- 
+
 /* ----------------------------------------------------------------
    10. NOMBRE DE HABILIDAD (.habilidad-nombre, .habilidad-nombre-en)
    ---------------------------------------------------------------- */
- 
+
 .habilidad-nombre {
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: #b5006e;
-  margin: 0 0 0.6rem;
-  display: inline-block;
-  position: relative;
+   font-size: 1.35rem;
+   font-weight: 800;
+   color: #b5006e;
+   margin: 0 0 0.6rem;
+   display: inline-block;
+   position: relative;
 }
- 
+
 /* Subrayado decorativo degradado (igual que main h2 pero centrado) */
 .habilidad-nombre::after {
-  content: '';
-  display: block;
-  height: 3px;
-  border-radius: 99px;
-  background: linear-gradient(90deg, #ff6eb4, #ffe066, #a8d8ff);
-  margin: 5px auto 0;
-  width: 60%;
+   content: '';
+   display: block;
+   height: 3px;
+   border-radius: 99px;
+   background: linear-gradient(90deg, #ff6eb4, #ffe066, #a8d8ff);
+   margin: 5px auto 0;
+   width: 60%;
 }
- 
+
 /* Nombre en inglés entre paréntesis: más pequeño y suave */
 .habilidad-nombre-en {
-  font-size: 0.82em;
-  font-weight: 600;
-  color: #cc5599;
-  opacity: 0.75;
+   font-size: 0.82em;
+   font-weight: 600;
+   color: #cc5599;
+   opacity: 0.75;
 }
- 
+
 /* ----------------------------------------------------------------
    11. DESCRIPCIÓN DE HABILIDAD (.habilidad-descripcion)
    ---------------------------------------------------------------- */
- 
+
 .habilidad-descripcion {
-  font-size: 0.94rem;
-  color: #7a004d;
-  line-height: 1.8;
-  margin: 0 0 1.2rem;
-  text-align: left;
+   font-size: 0.94rem;
+   color: #7a004d;
+   line-height: 1.8;
+   margin: 0 0 1.2rem;
+   text-align: left;
 }
- 
+
 /* ----------------------------------------------------------------
    12. SECCIÓN DE MOVIMIENTOS (.habilidad-movimientos)
    ---------------------------------------------------------------- */
- 
+
 .habilidad-movimientos {
-  width: 100%;
-  background: rgba(255, 240, 250, 0.65);
-  border: 1.5px solid rgba(255, 150, 200, 0.30);
-  border-radius: 18px;
-  padding: 1rem 1.2rem;
-  text-align: left;
-  margin-top: auto; /* Empuja la sección al fondo de la tarjeta */
+   width: 100%;
+   background: rgba(255, 240, 250, 0.65);
+   border: 1.5px solid rgba(255, 150, 200, 0.30);
+   border-radius: 18px;
+   padding: 1rem 1.2rem;
+   text-align: left;
+   margin-top: auto;
+   /* Empuja la sección al fondo de la tarjeta */
 }
- 
+
 /* ----------------------------------------------------------------
    13. TÍTULO DE MOVIMIENTOS (.movimientos-titulo)
    ---------------------------------------------------------------- */
- 
+
 .movimientos-titulo {
-  font-size: 0.95rem;
-  font-weight: 800;
-  color: #9a0055;
-  margin: 0 0 0.65rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+   font-size: 0.95rem;
+   font-weight: 800;
+   color: #9a0055;
+   margin: 0 0 0.65rem;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   gap: 6px;
 }
- 
+
 /* Estrella decorativa antes del título de movimientos */
 .movimientos-titulo::before {
-  content: '⭐';
-  font-size: 14px;
-  filter: drop-shadow(0 0 3px #ffe066);
+   content: '⭐';
+   font-size: 14px;
+   filter: drop-shadow(0 0 3px #ffe066);
 }
- 
+
 /* ----------------------------------------------------------------
    14. LISTA DE MOVIMIENTOS (.movimientos-lista)
    ---------------------------------------------------------------- */
- 
+
 .movimientos-lista {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 0.55rem;
 }
- 
+
 /* Cada ítem de movimiento */
 .movimiento {
-  font-size: 0.89rem;
-  color: #6b003f;
-  line-height: 1.6;
-  padding-left: 1.4rem;
-  position: relative;
+   font-size: 0.89rem;
+   color: #6b003f;
+   line-height: 1.6;
+   padding-left: 1.4rem;
+   position: relative;
 }
- 
+
 /* Viñeta personalizada: estrella pequeña */
 .movimiento::before {
-  content: '⭐';
-  position: absolute;
-  left: 0;
-  top: 0.05em;
-  font-size: 11px;
-  filter: drop-shadow(0 0 2px #ffe066);
-  line-height: 1.6;
+   content: '⭐';
+   position: absolute;
+   left: 0;
+   top: 0.05em;
+   font-size: 11px;
+   filter: drop-shadow(0 0 2px #ffe066);
+   line-height: 1.6;
 }
- 
+
 /* Nombre del movimiento en negrita y color destacado */
 .movimiento-nombre {
-  font-weight: 800;
-  color: #b5006e;
+   font-weight: 800;
+   color: #b5006e;
 }
- 
+
 /* Descripción del movimiento, tono más suave */
 .movimiento-descripcion {
-  color: #7a004d;
-  font-weight: 400;
+   color: #7a004d;
+   font-weight: 400;
 }
- 
+
 /* ----------------------------------------------------------------
    15. SECCIÓN DE TARJETAS GENÉRICA (index.html — .tarjetas)
    ---------------------------------------------------------------- */
- 
+
 .tarjetas {
-  background: rgba(255, 255, 255, 0.70);
-  border: 2px solid rgba(255, 170, 212, 0.40);
-  border-radius: 28px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  box-shadow: 0 4px 16px rgba(255, 110, 180, 0.09);
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+   background: rgba(255, 255, 255, 0.70);
+   border: 2px solid rgba(255, 170, 212, 0.40);
+   border-radius: 28px;
+   padding: 2rem;
+   margin-bottom: 2rem;
+   text-align: center;
+   backdrop-filter: blur(6px);
+   -webkit-backdrop-filter: blur(6px);
+   box-shadow: 0 4px 16px rgba(255, 110, 180, 0.09);
+   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
- 
+
 .tarjetas:hover {
-  box-shadow: 0 10px 32px rgba(255, 110, 180, 0.17);
-  border-color: rgba(255, 110, 180, 0.55);
+   box-shadow: 0 10px 32px rgba(255, 110, 180, 0.17);
+   border-color: rgba(255, 110, 180, 0.55);
 }
- 
+
 .tarjetas h2 {
-  font-size: 1.45rem;
-  font-weight: 800;
-  color: #b5006e;
-  margin: 0 0 0.8rem;
+   font-size: 1.45rem;
+   font-weight: 800;
+   color: #b5006e;
+   margin: 0 0 0.8rem;
 }
- 
+
 .tarjetas h3 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #9a0055;
-  margin: 0.5rem 0;
+   font-size: 1.05rem;
+   font-weight: 700;
+   color: #9a0055;
+   margin: 0.5rem 0;
 }
- 
+
 .tarjetas p {
-  font-size: 0.95rem;
-  color: #7a004d;
-  line-height: 1.8;
-  max-width: 560px;
-  margin: 0 auto;
+   font-size: 0.95rem;
+   color: #7a004d;
+   line-height: 1.8;
+   max-width: 560px;
+   margin: 0 auto;
 }
- 
+
 .tarjetas img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #fff5fb, #e8f4ff);
-  padding: 8px;
-  border: 2px solid rgba(255, 170, 212, 0.35);
-  margin-bottom: 0.6rem;
-  animation: rebote-icono 3s ease-in-out infinite;
+   width: 100px;
+   height: 100px;
+   object-fit: contain;
+   border-radius: 50%;
+   background: linear-gradient(135deg, #fff5fb, #e8f4ff);
+   padding: 8px;
+   border: 2px solid rgba(255, 170, 212, 0.35);
+   margin-bottom: 0.6rem;
+   animation: rebote-icono 3s ease-in-out infinite;
 }
- 
+
 /* ----------------------------------------------------------------
    16. RESPONSIVO — ajustes para pantallas pequeñas
    ---------------------------------------------------------------- */
- 
+
 @media (max-width: 600px) {
-  main {
-    padding: 1.5rem 1rem 2.5rem;
-  }
- 
-  .habilidades-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
- 
-  .habilidad-tarjeta {
-    padding: 1.5rem 1.25rem;
-    border-radius: 22px;
-  }
- 
-  .habilidad-icono {
-    width: 90px;
-    height: 90px;
-  }
- 
-  .habilidad-nombre {
-    font-size: 1.15rem;
-  }
- 
-  .bienvenida {
-    padding: 1.75rem 1.25rem;
-    border-radius: 22px;
-  }
- 
-  .bienvenida h2 {
-    font-size: 1.5rem;
-  }
+   main {
+      padding: 1.5rem 1rem 2.5rem;
+   }
+
+   .habilidades-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+   }
+
+   .habilidad-tarjeta {
+      padding: 1.5rem 1.25rem;
+      border-radius: 22px;
+   }
+
+   .habilidad-icono {
+      width: 90px;
+      height: 90px;
+   }
+
+   .habilidad-nombre {
+      font-size: 1.15rem;
+   }
+
+   .bienvenida {
+      padding: 1.75rem 1.25rem;
+      border-radius: 22px;
+   }
+
+   .bienvenida h2 {
+      font-size: 1.5rem;
+   }
 }
 
 /* ----------------------------------------------------------------
