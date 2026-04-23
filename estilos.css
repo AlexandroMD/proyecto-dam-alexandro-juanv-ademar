@@ -27,8 +27,6 @@
    3. PIE DE PÁGINA (footer)
    ---------------------------------------------------------------- */
 
-<<<<<<< HEAD
-=======
 /* --- Importación de fuente redondeada estilo Kirby --- */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
@@ -207,7 +205,6 @@
   opacity: 0.7;
   margin-top: 2px;
 }
->>>>>>> feature/footer-global
 
 /* ----------------------------------------------------------------
    6. ESTILOS ESPECÍFICOS DE CADA PÁGINA
