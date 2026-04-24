@@ -11,6 +11,7 @@
 
 ## 🎯 Tema del proyecto
 (Describir el tema elegido para la web: tienda, blog, portfolio, etc.)
+Kirby's Dream Web es una enciclopedia interactiva dedicada al universo de Kirby. El sitio funciona como un centro de información para fans donde se exploran las habilidades icónicas de Kirby, se detallan los personajes principales de Dream Land y se repasa la historia de la franquicia desde sus inicios hasta sus lanzamientos más recientes en 3D.
 
 ---
 
