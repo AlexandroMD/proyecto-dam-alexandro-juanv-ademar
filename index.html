@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <!-- Hoja de estilos compartida por todas las páginas del proyecto -->
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
   <!-- ============================================================
@@ -15,15 +17,21 @@
        - El menú debe enlazar a todas las páginas del proyecto
        - Cada miembro del equipo añadirá su página aquí
        ============================================================ -->
-  <header>
+  <header class="header-kirby">
     <div class="header-contenido">
-      <h1 class="logo">Mi Proyecto</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <!-- AÑADIR AQUÍ los enlaces a las páginas del equipo -->
-          <!-- Ejemplo: <li><a href="about.html">Sobre nosotros</a></li> -->
-          <!-- Ejemplo: <li><a href="contacto.html">Contacto</a></li>  -->
+      <!-- Logotipo enlazado a la página de inicio -->
+      <a href="index.html" class="header-logo" aria-label="Kirby's Dream Web - Inicio">
+        <span class="logo-estrella" aria-hidden="true">⭐</span>
+        <span class="logo-texto">Kirby's Dream Web</span>
+        <span class="logo-estrella" aria-hidden="true">⭐</span>
+      </a>
+
+      <!-- Navegación principal -->
+      <nav class="header-nav" aria-label="Navegación principal">
+        <ul class="nav-lista" role="list">
+          <li><a href="index.html" class="nav-enlace">🏠 Inicio</a></li>
+          <li><a href="habilidades.html" class="nav-enlace">✨ Habilidades</a></li>
+          <li><a href="amigos.html" class="nav-enlace">💖 Amigos</a></li>
         </ul>
       </nav>
     </div>
@@ -38,34 +46,108 @@
 
     <!-- Sección de bienvenida -->
     <section class="bienvenida">
-      <h2>Bienvenidos a nuestro proyecto</h2>
+      <h2>Bienvenido a Kirby's Dream Web</h2>
       <p>
-        Esta es la página de inicio. El equipo puede personalizar este contenido
-        según el tema elegido para el proyecto.
+        Esta plataforma es una <strong>enciclopedia interactiva dedicada al universo de Kirby</strong>.
+        Nuestro objetivo es ofrecer a los fans un espacio centralizado donde explorar los secretos del héroe rosado de
+        Dream Land.
+        En este sitio podrás descubrir:
       </p>
+      <ul style="list-style: none; padding: 0;">
+        <li>✨ <strong>Copia y Combate:</strong> Un análisis detallado de las habilidades icónicas, desde el clásico Rayo
+          hasta el dinámico Yoyó.</li>
+        <li>🤝 <strong>Círculo de Amigos:</strong> Información sobre los aliados inseparables como Bandana Dee y los
+          eternos rivales como el Rey Dedede o Meta Knight.</li>
+        <li>🎨 <strong>Experiencia Visual:</strong> Un diseño inspirado en la estética vibrante y mágica de los juegos
+          de HAL Laboratory.</li>
+      </ul>
       <p>
-        <!-- MODIFICAR: Escribid aquí una breve descripción de vuestro proyecto -->
-        Descripción breve del proyecto...
+        Navega a través de nuestras secciones para convertirte en un experto de la saga. ¡La aventura acaba de empezar!
       </p>
+    </section>
+
+    <section class="tarjetas">
+      <h2>La Historia del Héroe Rosado</h2>
+      <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <p>
+          Kirby nació en 1992 de la mano de <strong>Masahiro Sakurai</strong> en el juego <em>Kirby's Dream Land</em>
+          para Game Boy.
+          Originalmente, su diseño circular era solo un "placeholder" o marcador de posición temporal, pero el equipo se
+          encariñó tanto con su sencillez que decidieron mantenerlo como el protagonista definitivo.
+        </p>
+        <p>
+          Habitante de <strong>Dream Land</strong> en el planeta Popstar, Kirby es conocido por su capacidad de absorber
+          enemigos para copiar sus habilidades. A lo largo de más de 30 años, ha pasado de ser un joven glotón que
+          salvaba la comida de su pueblo a un guerrero cósmico capaz de derrotar entidades que amenazan el universo
+          entero.
+        </p>
+      </div>
+    </section>
+
+    <section class="bienvenida">
+      <h2>Últimas Noticias: Kirby y el Mundo Olvidado</h2>
+      <img src="imagenes/portada_juego.jpg" alt="Kirby y el Mundo Olvidado"
+        style="width: 100%; max-width: 500px; border-radius: 20px; margin-bottom: 15px; border: 3px solid #ffaad4;">
+      <p>
+        El último gran hito de la franquicia es <strong>Kirby y el Mundo Olvidado</strong> (<em>Kirby and the Forgotten
+          Land</em>), la primera aventura de la serie en entornos 3D completos.
+      </p>
+      <ul style="list-style: none; padding: 0; color: #7a004d; font-size: 1rem;">
+        <li>🌟 <strong>Modo Transmorfosis:</strong> ¡Kirby ahora puede inhalar objetos grandes como coches o máquinas
+          expendedoras!</li>
+        <li>🎮 <strong>Éxito de ventas:</strong> Se ha convertido en el juego más vendido de la historia de la
+          franquicia.</li>
+        <li>⚔️ <strong>Evolución de habilidades:</strong> Por primera vez, puedes mejorar tus habilidades de copia en la
+          armería de la Ciudad de los Waddle Dees.</li>
+      </ul>
     </section>
 
     <!-- Sección de tarjetas / destacados -->
     <section class="tarjetas">
-      
+      <h2> Habilidad Del Dia </h2>
+      <img src="imagenes/KSA_Yo-Yo_Icon.png">
+      <h3> Yo-yo </h3>
+      <p> introducido en kirby super star, esta habilidad permite realizar ataques rapidos y de larga distancia
+        empleando un Yo-yo </p>
     </section>
 
-  </main>
 
+  </main>
   <!-- ============================================================
        PIE DE PÁGINA
        - Información de contacto, créditos y enlaces secundarios
        ============================================================ -->
-  <footer>
+  <!-- FOOTER hecho por Juan Manuel Vila Millán -->
+  <footer class="footer-kirby">
     <div class="footer-contenido">
-      <p>&copy; 2026 Mi Proyecto &mdash; Desarrollado por</p>
-      <!-- AÑADIR: nombres del equipo, enlaces a redes sociales, etc. -->
+
+      <div class="redes-sociales">
+        <a href="#" class="social-link" title="Twitch de King Dedede">
+          <span class="icono">👑</span> Twitch de Dedede
+        </a>
+        <a href="#" class="social-link" title="Waddle Dee Gram">
+          <span class="icono">🍭</span> Waddle Dee Gram
+        </a>
+        <a href="#" class="social-link" title="Meta Knight X">
+          <span class="icono">⚔️</span> Meta Knight X
+        </a>
+      </div>
+
+      <div class="divisor-estrellas" aria-hidden="true">
+        <span>🌟</span><span>⭐</span><span>🌟</span><span>⭐</span><span>🌟</span>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2026 <strong>Kirby’s Dream Web</strong></p>
+        <p class="nombres-grupo">
+          Desarrollado por: <span>Juan Vila, Alexandro Montes, Ademar Carril</span>
+        </p>
+        <p class="frase-final">Hecho con Maxitomates y Estrellas de Deseos</p>
+      </div>
+
+
     </div>
   </footer>
-
 </body>
+
 </html>
